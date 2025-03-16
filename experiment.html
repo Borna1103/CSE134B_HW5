@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Einstein's famous equation E=mc², which describes the relationship between energy and mass.">
+    <meta name="keywords" content="Einstein, E=mc², mass, energy, physics, formula">
+    <title>Experiment Page</title>
+</head>
+
+<body>
+    <header>
+        <search>
+            <form>
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+            </form>
+        </search>
+    </header>
+
+<main>
+    
+    
+    <!-- Custom Tags -->
+     <project-container style="display: block; width: 300px; border: 2px solid black;">
+        <h2>Project #2</h2>
+        <img alt="Project #2" src="project2.jpg">
+        
+     </project-container>
+
+     <hello-world></hello-world>
+     <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                // The constructor is where the custom element is defined
+            }
+    
+            connectedCallback() {
+                console.log("Hello World!"); // Logs the message to the console
+            }
+        }
+    
+        // Define the custom element
+        customElements.define('hello-world', HelloWorld);
+    </script>
+    <template>
+        <h2>Template</h2>
+    </template>
+    
+    <!-- Extra Credit -->
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mi>E</mi>
+          <mo>=</mo>
+          <mi>m</mi>
+          <mo>&#8290;</mo>
+          <msup>
+            <mi>c</mi>
+            <mn>2</mn> 
+          </msup>
+        </mrow>
+      </math>
+
+    <datalist id="fruits">
+        <option value="Apple">
+        <option value="Banana">
+        <option value="Cherry">
+        <option value="Grapes">
+        <option value="Orange">
+        <option value="Pineapple">
+    </datalist>
+
+    <table>
+        
+        <caption>Experiment Table</caption>
+        <colgroup>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <details>
+        <summary>Click to expand</summary>
+        <p>Hidden details go here.</p>
+    </details>
+
+    <div>
+        <abbr title="World Health Organization">WHO</abbr> is a global organization.
+    </div>
+    
+    <div>
+        <kbd>Ctrl + C</kbd> to copy text.
+    </div>
+    
+    <div>
+        <dfn title="Hypertext Markup Language">HTML</dfn> is the standard language for web development.
+    </div>
+    
+    <div>
+        <strong>This is a strong message</strong>
+    </div>
+    
+
+    
+
+    <iframe src="https://www.youtube.com/231fgf" width="600" height="400"></iframe>
+
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <select>
+        <optgroup label="Fruits">
+          <option value="apple">Apple</option>
+          <option value="orange">Orange</option>
+          <option value="banana">Banana</option>
+        </optgroup>
+        <optgroup label="Vegetables">
+          <option value="carrot">Carrot</option>
+          <option value="spinach">Spinach</option>
+          <option value="broccoli">Broccoli</option>
+        </optgroup>
+    </select>
+
+    <p>
+        This is <del>deleted</del> for this <ins>inserted</ins> text
+    </p>
+
+    
+
+    <dialog open>
+        <p>Random Dialogue Text</p>
+    </dialog>
+
+    <canvas id="circleCanvas" width="400" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('circleCanvas');
+        const ctx = canvas.getContext('2d');
+    
+        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(200, 200, 50, 0, Math.PI * 2); // (x, y, radius, start angle, end angle)
+        ctx.fillStyle = 'blue';
+        ctx.fill();
+    </script>
+</main>
+
+<footer></footer>
+</body>

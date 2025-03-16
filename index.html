@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borna's Portfolio</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="projects-card.js" defer></script>
+    <script src="load-projects.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Logo at the front of the nav bar-->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projectsandExperience">Projects</a></li>
+
+                <!-- GitHub Link -->
+                <li style="margin-left: auto;">
+                    <a href="https://github.com/Borna1103" target="_blank">
+                        <img src="public/github-mark-white.svg" alt="GitHub Logo">
+                    </a>
+                </li>
+
+                <!-- LinkedIn Link -->
+                <li>
+                    <a href="https://www.linkedin.com/in/borna-hemmaty/" target="_blank">
+                        
+                        <img src="public/In-White-96@2x.png" alt="Linkedin Logo">
+                    </a>
+                </li>
+
+                <li id="resume">
+                    <a href="https://drive.google.com/file/d/1cNnT04utfcBlPoTxv7oIeoCxGfbrHoar/view?usp=sharing">
+                        Resume
+                    </a>
+                </li>
+            
+                <li id="theme-toggle" style="margin-left: 10px;">
+                    <button id="toggle-button">🌞</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <noscript>
+                <h1>noscript activated</h1>
+                <p>
+                    JavaScript is <em>disabled</em>. Some features may not work. 
+                </p>
+                <aside>please enable JavaScript so all featues work</aside>
+            </noscript>
+        </section>
+
+        <section id="home">
+            <div >
+                <hgroup>
+                    <h1>Hello!</h1>
+                    <h1>My Name is Borna Hemmaty</h1>
+                    <p>Check out my projects and work!</p>
+                </hgroup>
+
+                <blockquote style="display: flex; flex-direction: column;">
+                    <i>"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time."</i>
+                    <cite>— Thomas A. Edison</cite>
+                </blockquote>
+            </div>
+            
+
+            <img src="public/profile.png" alt="My Profile Picture" >
+        </section>
+        <!-- <hr>
+        <section>
+            <h2>I love to code!</h2>
+            <pre><code>
+                function Welcome() {
+                console.log("Greetings Developer");
+                }
+            </code></pre>
+        </section>
+        <hr> -->
+
+        <section id="about">
+            <div>
+                <h2 style="font-size: 2rem">About Me</h2>
+                <p>Hello, my name is Borna, I am currently a student at University of California San Diego studying Mathematics Computer Science and am a aspiring full-stack developer. I love learning and expanding my knowledge in the computer science field and hope to learn a lot more to jumpstart my career.</p>
+                
+
+                <h2>Frequently Asked Questions</h2>
+                <dl>
+                    <dt>What is your name?</dt>
+                    <dd>My name is Borna Hemmaty.</dd>
+
+                    <dt>What do you do?</dt>
+                    <dd>I am a software engineer specializing in web and game development.</dd>
+
+                    <dt>What programming languages do you use?</dt>
+                    <dd>I work with JavaScript, TypeScript, Python, C#, and Java mostly.</dd>
+
+                    <dt>Where can I see your work?</dt>
+                    <dd>You can check out my projects on my <a href="https://github.com/Borna1103" target="_blank">GitHub</a>.</dd>
+                </dl>
+            </div>
+        </section>
+
+       
+        <div class="button-container">
+            <button id="load-local">Load Local</button>
+            <button id="load-remote">Load Remote</button>
+        </div>
+        <section id="projectsandExperience">
+            
+
+            <!-- Planning on using JS to sub in projects and experience portion -->
+            
+            <div id="projects">
+                <h2>Projects</h2>
+                
+                
+            </div>
+
+            <div id="experience">
+                <h2>Experience</h2>
+                <p>Details about my professional experience.</p>
+            </div>
+        </section>
+    </main>
+    <style scoped>
+        #contact {
+            background-color: color-mix(in srgb, green 60%, blue 40%);
+            margin-top: auto;
+            label {
+                color: color(srgb 0 0.7 1);
+            }
+        }
+
+        .error-message {
+            color: red;
+            display: none; /* Initially hidden */
+        }
+
+        .info-message {
+            color: green;
+            
+        }
+        input:user-valid, textarea:user-valid {
+            border-color: green;
+        }
+        input:user-invalid, textarea:user-invalid {
+            border-color: red;
+        }
+        
+
+        input, textarea {
+            color: black;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 20px;
+            max-height: 150px;
+        }
+
+        output {
+           
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        fieldset button{
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .warning {
+            color: orange;
+        }
+        .error {
+            color: red;
+            animation: flash 0.5s;
+        }
+        @keyframes flash {
+            0%, 100% { background-color: white; }
+            50% { background-color: #ffdddd; }
+        }
+    </style>
+    <footer>
+        
+
+        
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://httpbin.org/post" method="post" id="contact-form">
+                <fieldset>
+                <legend>Send me a message!</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" pattern="([A-Za-z\s]*)+$" required>
+                <output class="error-message" id="name-error">Name is required.</output>
+                <output class="info-message" id="name-info">Please enter your full name.</output>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" pattern="^([A-Za-z0-9@.\s]*)$"required>
+                <output class="error-message" id="email-error">Valid email is required.</output>
+                <output class="info-message" id="email-info">We will not share your email.</output>
+                <br>
+                <label for="message">Comments:</label>
+                <textarea id="message" name="message" required minlength="5" maxlength="200" pattern="^([A-Za-z0-9 .,!?'-]*)+$"></textarea>
+                <output class="error-message" id="message-error"></output>
+                <output class="info-message" id="message-info">Maximum 500 characters remaining.</output>
+                <br>
+                <input type="hidden" name="possible_bot" value="">
+                <input type="hidden" name="form-errors" id="form-errors">
+                <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </div>
+        <script>
+            const form = document.getElementById("contact-form");
+            const formErrors = [];
+    
+            // Validate form fields
+            function validateField(field, regex, errorMessage) {
+                field.addEventListener("input", (e) => {
+                    if (!regex.test(field.value)) {
+                        field.classList.add("error");
+                        document.getElementById(field.id + "-error").textContent = errorMessage;
+                        document.getElementById(field.id + "-error").style.display = "block";
+                        formErrors.push({ field: field.name, message: errorMessage, value: field.value });
+                        setTimeout(() => {
+                            document.getElementById(field.id + "-error").style.display = "none";
+                        }, 2000);
+                        e.preventDefault();
+                    } else {
+                        field.classList.remove("error");
+                        document.getElementById(field.id + "-error").style.display = "none";
+                    }
+                });
+            }
+            console.log(customElements.get("project-card"));
+            validateField(document.getElementById("name"), /^([A-Za-z\s]*)$/, "Only letters and spaces allowed.");
+            validateField(document.getElementById("message"), /^([A-Za-z0-9 .,!?'-]*)+$/, "Only standard characters allowed.");
+            validateField(document.getElementById("email"), /^([A-Za-z0-9@.\s]*)$/, "Please enter in a valid email.");
+            
+            // Message field character count
+            const messageField = document.getElementById("message");
+            const messageInfo = document.getElementById("message-info");
+            messageField.addEventListener("input", () => {
+                const remaining = 200 - messageField.value.length;
+                messageInfo.textContent = `Maximum ${remaining} characters remaining.`;
+                
+                if (remaining < 50) {
+                    messageInfo.classList.add("warning");
+                } else {
+                    messageInfo.classList.remove("warning");
+                }
+            });
+    
+            // Form errors
+            form.addEventListener("submit", (event) => {
+                document.getElementById("form-errors").value = JSON.stringify(formErrors);
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    alert("Please fix errors before submitting.");
+                }
+            });
+
+            // Theme toggle
+            document.addEventListener("DOMContentLoaded", () => {
+                const toggleButton = document.getElementById("toggle-button");
+                const currentTheme = localStorage.getItem("theme") || "light";
+                document.documentElement.setAttribute("data-theme", currentTheme);
+                toggleButton.textContent = currentTheme === "dark" ? "🌜" : "🌞";
+
+                toggleButton.addEventListener("click", () => {
+                    const newTheme = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+                    document.documentElement.setAttribute("data-theme", newTheme);
+                    localStorage.setItem("theme", newTheme);
+                    toggleButton.textContent = newTheme === "dark" ? "🌜" : "🌞";
+                });
+            });
+        </script>
+        <div>
+            <address>
+                <p>Contact: <a href="mailto:hemmatyborna@gmail.com">hemmatyborna@gmail.com</a></p>
+            </address>
+
+
+            <p>&copy; 2025 My Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>

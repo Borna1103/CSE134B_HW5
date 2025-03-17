@@ -1,0 +1,30 @@
+[
+    {
+        "id" : 1,
+        "title": "TYS Creative",
+        "logo": "/tysCreative.jpeg",
+        "date": "June 2021 - September 2021",
+        "position": "Informationalist"
+    },
+    {
+        "id" : 2,
+        "title": "Triton Testing",
+        "logo": "/triton.jpg",
+        "date": "September 2024 - Present",
+        "position": "Proctor"
+    },
+    {
+        "id" : 3,
+        "title": "GBCS Backend Software Developer",
+        "logo": "/gbcs.png", 
+        "date": "September 2024 - Present",
+        "position": "Intern"
+    },
+    {
+        "id" : 4,
+        "title": "Maveric Studio Developer",
+        "logo": "/Maveric.png", 
+        "date": "March 2025 - Present",
+        "position": "Unity Developer"
+    }
+]

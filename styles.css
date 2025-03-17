@@ -226,14 +226,13 @@ footer {
     div::-webkit-scrollbar { 
         display: none;  /* Safari and Chrome */
     }
+    #experience experience-card{
+        text-align:left;
+    }
     
 }
 
 
-
-#experience {
-
-}
 
 /* Style for Phone */
 @media (max-width: 900px) {

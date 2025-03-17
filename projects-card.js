@@ -21,7 +21,7 @@ class ProjectCard extends HTMLElement {
            
             .card {
                 transition: transform 0.2s ease-in-out;
-                width: 95%;
+             
                 font-size: 1rem;
                 padding: 1rem;
                 text-align: center;
@@ -40,7 +40,7 @@ class ProjectCard extends HTMLElement {
         <div class="card">
 
           <h2>${title}</h2>
-          <p>${date}</p>
+          <time>${date}</time>
           <p>${skills}</p>
           ${imgElement}
           

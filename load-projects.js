@@ -18,7 +18,7 @@ async function renderProjects(projects) {
       const card = document.createElement("project-card");
       
       card.setAttribute("title", project.title);
-      card.setAttribute("imgSrc", project.image);
+      card.setAttribute("image", project.image);
       card.setAttribute("description", project.description);
       card.setAttribute("skills", project.skills);
       card.setAttribute("date", project.date);

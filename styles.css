@@ -84,11 +84,21 @@ nav {
 footer {
     background-color: var(--secondary-color);
     display: flex;
+    padding: 2rem;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    p {
-        color: color(srgb 0 0.7 1);
+    height: 50%;
+    
+    button {
+        background-color: var(--secondary-project-color);
+        border-radius: 6px;
+        padding: 0.25rem 0.25rem;
+        font-size: 0.8rem;
+        border-top-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        height: 150px;
+        width: 200px;
     }
 }
 
@@ -189,7 +199,6 @@ footer {
 }
 #projectsandExperience{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;

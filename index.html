@@ -205,7 +205,7 @@
         
 
         
-        <div id="contact">
+        <!-- <div id="contact">
             <h2>Contact Me</h2>
             <form action="https://httpbin.org/post" method="post" id="contact-form">
                 <fieldset>
@@ -230,56 +230,56 @@
                 <button type="submit">Send</button>
                 </fieldset>
             </form>
-        </div>
+        </div> -->
         <script>
-            const form = document.getElementById("contact-form");
-            const formErrors = [];
+            // const form = document.getElementById("contact-form");
+            // const formErrors = [];
     
-            // Validate form fields
-            function validateField(field, regex, errorMessage) {
-                field.addEventListener("input", (e) => {
-                    if (!regex.test(field.value)) {
-                        field.classList.add("error");
-                        document.getElementById(field.id + "-error").textContent = errorMessage;
-                        document.getElementById(field.id + "-error").style.display = "block";
-                        formErrors.push({ field: field.name, message: errorMessage, value: field.value });
-                        setTimeout(() => {
-                            document.getElementById(field.id + "-error").style.display = "none";
-                        }, 2000);
-                        e.preventDefault();
-                    } else {
-                        field.classList.remove("error");
-                        document.getElementById(field.id + "-error").style.display = "none";
-                    }
-                });
-            }
-            console.log(customElements.get("project-card"));
-            validateField(document.getElementById("name"), /^([A-Za-z\s]*)$/, "Only letters and spaces allowed.");
-            validateField(document.getElementById("message"), /^([A-Za-z0-9 .,!?'-]*)+$/, "Only standard characters allowed.");
-            validateField(document.getElementById("email"), /^([A-Za-z0-9@.\s]*)$/, "Please enter in a valid email.");
+            // // Validate form fields
+            // function validateField(field, regex, errorMessage) {
+            //     field.addEventListener("input", (e) => {
+            //         if (!regex.test(field.value)) {
+            //             field.classList.add("error");
+            //             document.getElementById(field.id + "-error").textContent = errorMessage;
+            //             document.getElementById(field.id + "-error").style.display = "block";
+            //             formErrors.push({ field: field.name, message: errorMessage, value: field.value });
+            //             setTimeout(() => {
+            //                 document.getElementById(field.id + "-error").style.display = "none";
+            //             }, 2000);
+            //             e.preventDefault();
+            //         } else {
+            //             field.classList.remove("error");
+            //             document.getElementById(field.id + "-error").style.display = "none";
+            //         }
+            //     });
+            // }
+            // console.log(customElements.get("project-card"));
+            // validateField(document.getElementById("name"), /^([A-Za-z\s]*)$/, "Only letters and spaces allowed.");
+            // validateField(document.getElementById("message"), /^([A-Za-z0-9 .,!?'-]*)+$/, "Only standard characters allowed.");
+            // validateField(document.getElementById("email"), /^([A-Za-z0-9@.\s]*)$/, "Please enter in a valid email.");
             
-            // Message field character count
-            const messageField = document.getElementById("message");
-            const messageInfo = document.getElementById("message-info");
-            messageField.addEventListener("input", () => {
-                const remaining = 200 - messageField.value.length;
-                messageInfo.textContent = `Maximum ${remaining} characters remaining.`;
+            // // Message field character count
+            // const messageField = document.getElementById("message");
+            // const messageInfo = document.getElementById("message-info");
+            // messageField.addEventListener("input", () => {
+            //     const remaining = 200 - messageField.value.length;
+            //     messageInfo.textContent = `Maximum ${remaining} characters remaining.`;
                 
-                if (remaining < 50) {
-                    messageInfo.classList.add("warning");
-                } else {
-                    messageInfo.classList.remove("warning");
-                }
-            });
+            //     if (remaining < 50) {
+            //         messageInfo.classList.add("warning");
+            //     } else {
+            //         messageInfo.classList.remove("warning");
+            //     }
+            // });
     
-            // Form errors
-            form.addEventListener("submit", (event) => {
-                document.getElementById("form-errors").value = JSON.stringify(formErrors);
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    alert("Please fix errors before submitting.");
-                }
-            });
+            // // Form errors
+            // form.addEventListener("submit", (event) => {
+            //     document.getElementById("form-errors").value = JSON.stringify(formErrors);
+            //     if (!form.checkValidity()) {
+            //         event.preventDefault();
+            //         alert("Please fix errors before submitting.");
+            //     }
+            // });
 
             // Theme toggle
             document.addEventListener("DOMContentLoaded", () => {
@@ -297,12 +297,19 @@
             });
         </script>
         <div>
-            <address>
-                <p>Contact: <a href="mailto:hemmatyborna@gmail.com">hemmatyborna@gmail.com</a></p>
-            </address>
+            <h2>Get In Contact!</h2>
+            <p>Feel free to contact me about any questions or inquires you may have!</p>
+        </div>
+        <div>
+            <a href="mailto:hemmatyborna@gmail.com" style="text-decoration: none;">
+                <button >
+                    <address>
+                        <p style="font-size: 1.5rem">✉️</p>
+                        <p>hemmatyborna@gmail.com</p>
+                    </address>
+                </button>
+            </a>
 
-
-            <p>&copy; 2025 My Portfolio</p>
         </div>
     </footer>
 </body>

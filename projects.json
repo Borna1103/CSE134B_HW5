@@ -1,26 +1,25 @@
-{
-    "projects": [
-        {
-            "title": "2D-Portfolio",
-            "description": "Created a mario-like web browser game used to showcase as a portfolio using kaboom.js a javascript library, sprites and vanilla html/css",
-            "date": "July 2024 - Present",
-            "skills": "Kaboom.js, vite, HTML, CSS, Tiled, Javascript",
-            "link": "https://github.com/Borna1103/2D-Portfolio"
-        },
-        {
-            "title": "BomberMan Remake in VRChat",
-            "description": "Recreation of the old nintendo game Bomberman in VRChat through the VRCohort @ UCSD, Maveric Studios.",
-            "date": "January 2025 - March 2025",
-            "image": "images/BomberManVrChat.png",
-            "skills": "Unity, C#, UdonSharp, VRChat SDK",
-            "link": "https://vrchat.com/home/world/wrld_3b3b3b3b-0b3b-4b3b-8b3b-3b3b3b3b3b3b"
-        },
-        {
-            "title": "Portfolio Website",
-            "description": "Personal portfolio website created using node.js, HTML, CSS, tailwindcss, and Javascript",
-            "date": "June 2024 - Present",
-            "skills": "node.js, HTML, CSS, Javascript, tailwindcss",
-            "link": "https://borna1103.github.io/Borna/"
-        }
-    ]   
-}
+
+[
+    {
+        "title": "2D-Portfolio",
+        "description": "Created a mario-like web browser game used to showcase as a portfolio using kaboom.js a javascript library, sprites and vanilla html/css",
+        "date": "July 2024 - Present",
+        "skills": "Kaboom.js, vite, HTML, CSS, Tiled, Javascript",
+        "link": "https://github.com/Borna1103/2D-Portfolio"
+    },
+    {
+        "title": "BomberMan Remake in VRChat",
+        "description": "Recreation of the old nintendo game Bomberman in VRChat through the VRCohort @ UCSD, Maveric Studios.",
+        "date": "January 2025 - March 2025",
+        "image": "images/BomberManVRChat.png",
+        "skills": "Unity, C#, UdonSharp, VRChat SDK",
+        "link": "https://vrchat.com/home/world/wrld_3b3b3b3b-0b3b-4b3b-8b3b-3b3b3b3b3b3b"
+    },
+    {
+        "title": "Portfolio Website",
+        "description": "Personal portfolio website created using node.js, HTML, CSS, tailwindcss, and Javascript",
+        "date": "June 2024 - Present",
+        "skills": "node.js, HTML, CSS, Javascript, tailwindcss",
+        "link": "https://borna1103.github.io/Borna/"
+    }
+]   
